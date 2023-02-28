@@ -2,6 +2,7 @@
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
     "version": 1,
     "cli": {
+      "analytics": false,
         "cache": {
             "enabled": true,
             "path": ".cache",
@@ -155,7 +156,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "tsConfig": "projects/picker/tsconfig.lib.json",
+                        "tsConfig": "projects/picker/tsconfig.lib.prod.json",
                         "project": "projects/picker/ng-package.json"
                     },
                     "configurations": {
